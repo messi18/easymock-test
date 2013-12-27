@@ -1,6 +1,9 @@
 package com.lance;
 
-import com.lance.SimpleDao;
+import org.junit.Test;
+
+import static org.easymock.EasyMock.createMock;
+import static org.easymock.EasyMock.expect;
 
 /**
  * Created by malance on 13-12-26.
@@ -8,7 +11,7 @@ import com.lance.SimpleDao;
 public class SimpleTest {
     @Test
     public void testSimpleDao(){
-        SimpleDao dao = mock(SimpleDao.class);
-        expect(dao.getUserList()).
+        SimpleDao dao = createMock(SimpleDao.class);
+        expect(dao.getUserList());
     }
 }
